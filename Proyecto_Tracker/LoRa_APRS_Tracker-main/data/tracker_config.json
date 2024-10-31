@@ -1,7 +1,7 @@
 {
 	"beacons": [
 		{
-			"callsign": "TIGPO4-7" ,
+			"callsign": "TITEC4-7" ,
 			"gpsEcoMode": false,
 			"symbol": "[",
 			"overlay": "/",
@@ -20,7 +20,7 @@
 			}			
 		},
 		{
-			"callsign": "TI3JMS-7",
+			"callsign": "TIGPO4-7",
 			"gpsEcoMode": false,
 			"symbol": ">",
 			"overlay": "/",
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"callsign": "TI3ABC-7",
+			"callsign": "TIJMS1-7",
 			"gpsEcoMode": false,
 			"symbol": "b",
 			"overlay": "/",
