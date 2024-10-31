@@ -1,0 +1,24 @@
+Referente a VSCode del tracker
+Usar :Project Tasks\ttgo-t-beam-v1_2 que es el modelo adecuado
+
+Configs:
+Indicativos
+callsign: el nombrecito que tiene	TIEWTI-7: 
+					TI3WTI	-> indicativo
+					-7	-> ssid
+
+comment: comentario de envío en cada Tx
+
+configs smartbeacon
+active: True 		-> calcula el tiempo entre beacons
+slowRate:		-> segundos entre beacons
+slowspeed:		-> velocidad de slowrate
+fastrate:		-> segundos entre beacons
+fastspeed:		-> velocidad de fastrate
+mintxdist:		-> distancia entre beacons
+mindeltabeacon:		-> segundos entre beacons
+turnmindeg:
+turnslope:		-> se usan ambos para calcular el tiempo de giro para encontrar otro beacon
+
+LoRa:
+configurado según la región
