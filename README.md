@@ -6,6 +6,10 @@ Implementando un dispositivo de transmisión GPS como lo es el "LILYGO T-Beam V1
 Este dispositivo requiere del uso de un firmware específico de conexión con el dispositivo.
 Se integra mediante el uso de un editor de código como lo es VSCode, mediante la extensión PlatformIO que ayuda a la conexión de los dispositivos, en este caso, el dispositivo de transmisión. 
 
+# Forma de conexión al Dispositivo
+
+1. Ambiente de edición y variables.
+
 Dentro del ambiente de codificación, de las configuraciones relevante, se detallan:
 
 ![image](https://github.com/user-attachments/assets/146e6aa0-6f53-45ad-9c53-d670948f87f9)
@@ -28,3 +32,7 @@ El valor del callsign de divide en 2 partes:
 * Bloque "lora":
   * frequency: frecuencia de transmisión, ajustada a 433.775 MHz debido a la frecuencia de transmisión definida por legislación nacional.
   * power: potencia de la señal.
+
+2. Proceso de conexión.
+
+3. 
