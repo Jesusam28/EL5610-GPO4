@@ -40,13 +40,17 @@ El valor del callsign de divide en 2 partes:
  1- Con el sistema cargado en VSCode, se abre el archivo destinado para la configuración del transmisor.
  
  2- Configurar el dispositivo a gusto y conveniencia. En el ejemplo se muestran 3 distintos callsigns para el dispositivo.
+ 
  3- Configurar el dispositivo según la librería disponible. Para este dispositivo, la opción corresponde a "ttgo-t-beam-v1_2".
+ 
  4- Seleccionar la opción para compilación.
+ 
  5- Seleccionar la opción para construir el código.
 
 ![Guia_page-0002](https://github.com/user-attachments/assets/bd1f358b-7928-449e-8c69-eabf699d6679)
 
  6- Se traslada al menú de PlatformIO.
+ 
  7- En la sección de este menú, buscando la opción del dispositivo, seleccionar la opción "Upload Filesystem Image" para ingresarlo al dispositivo.
  
 Una vez que se realiza este proceso, el dispositivo está listo y configurado. Solo resta dejar el dispositivo a operación para que se conecte con el sistema APRS y transmita la información.
