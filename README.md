@@ -50,3 +50,21 @@ El valor del callsign de divide en 2 partes:
  
 Una vez que se realiza este proceso, el dispositivo está listo y configurado. Solo resta dejar el dispositivo a operación para que se conecte con el sistema APRS y transmita la información.
 Retornando a la sección de configuración, existe un indicativo mediante un LED el cuál permite que se pueda visualizar de forma física que el sistema está ejecutandose, esto a forma de respuesta del dispositivo para poder tener conocimiento que hay conexión. Sin este, en el dispositivo no se puede determinar si se está transmitiendo de forma correcta. Se recomienda usar esta configuración para confirmar que está en ejecución.
+
+# Script de obtención de coordenadas.
+El proyecto se proyecta como un sistema que determine el tiempo que requiere un transporte público hasta que llegue a una parada. Se proyecta que se realice en el Tecnológico de Costa Rica, por tanto, se proyecta como un sistema implementado en los autobuses y que determine el tiempo que le toma al autobus a distintas velocidades para llegar a una parada. Se determina el tiempo que requiere a partir del cálculo de la distancia con coordenadas y se presenta en forma de tablas donde se muestra el tiempo en horas, minutos y segundos.
+
+El programa presenta este algoritmo, el cuál logra realizar estos cálculos. La forma de obtención de las coordenadas se realizaría mediante la extracción de las coordenadas desde la página de visualización. Sin embargo, debido a que esta extracción es muy relativa a que pueda estar o no esto disponible, a modo de prueba, se ingresa de forma manual al programa para determinar estas distancias.
+
+Un hecho importante de resaltar es que el calculo de la distancia de forma lineal, no considera el tiempo que involucre la ruta si no es en línea recta o incluso lo relativo de la distancia según la ruta. Además, no distingue incluso si la localización del transmisor está después o antes de la parada, por tanto, este detalle requiere un mapeo previo que pueda producir y resolver este tipo de incongruencias existentes.
+
+Por ejemplo, se analiza el caso de un sistema de paradas, entre las cuales, se encuentran las siguientes:
+
+![Paradas](https://github.com/user-attachments/assets/492022a9-db59-4dc6-b41a-0ba79ac42770)
+
+Para este caso, se localiza que el transmisor está localizado en las cercanías de la Escuela de Mantenimiento Industrial en el Tecnológico de Costa Rica, localizado en las coordenadas:
+Latitud: 9.855053 y Longitud: -83.910603
+
+Con esto, se determina que, relativo a esta coordenada, el tiempo que le toma al sistema es:
+
+![image](https://github.com/user-attachments/assets/34db4c5e-8112-42ba-8a2d-2b16577bfc52)
