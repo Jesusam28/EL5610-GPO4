@@ -180,9 +180,9 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
 tiempos_min = pd.DataFrame({
     'Parada':['Parada Diseño', 'Parada Electronica', 'Parada G18', 'Parada Mantenimiento', 'Parada Biblioteca', 'Parada Principal', 'Entrada del TEC', 'Parada Cartago Centro'],
-    'Tiempo (5 kph)[h]':[T_P1_5m, T_P2_5m, T_P3_5m, T_P4_5m, T_P5_5m, T_P6_5m, T_P7_5m, T_P8_5m],
-    'Tiempo (15 kph)[h]':[T_P1_15m, T_P2_15m, T_P3_15m, T_P4_15m, T_P5_15m, T_P6_15m, T_P7_15m, T_P8_15m],
-    'Tiempo (25 kph)[h]':[T_P1_25m, T_P2_25m, T_P3_25m, T_P4_25m, T_P5_25m, T_P6_25m, T_P7_25m, T_P8_25m]
+    'Tiempo (5 kph)[min]':[T_P1_5m, T_P2_5m, T_P3_5m, T_P4_5m, T_P5_5m, T_P6_5m, T_P7_5m, T_P8_5m],
+    'Tiempo (15 kph)[min]':[T_P1_15m, T_P2_15m, T_P3_15m, T_P4_15m, T_P5_15m, T_P6_15m, T_P7_15m, T_P8_15m],
+    'Tiempo (25 kph)[min]':[T_P1_25m, T_P2_25m, T_P3_25m, T_P4_25m, T_P5_25m, T_P6_25m, T_P7_25m, T_P8_25m]
     })
 
 # Tabla de Tiempos (segundos)
@@ -190,15 +190,15 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
 tiempos_seg = pd.DataFrame({
     'Parada':['Parada Diseño', 'Parada Electronica', 'Parada G18', 'Parada Mantenimiento', 'Parada Biblioteca', 'Parada Principal', 'Entrada del TEC', 'Parada Cartago Centro'],
-    'Tiempo (5 kph)[h]':[T_P1_5s, T_P2_5s, T_P3_5s, T_P4_5s, T_P5_5s, T_P6_5s, T_P7_5s, T_P8_5s],
-    'Tiempo (15 kph)[h]':[T_P1_15s, T_P2_15s, T_P3_15s, T_P4_15s, T_P5_15s, T_P6_15s, T_P7_15s, T_P8_15s],
-    'Tiempo (25 kph)[h]':[T_P1_25s, T_P2_25s, T_P3_25s, T_P4_25s, T_P5_25s, T_P6_25s, T_P7_25s, T_P8_25s]
+    'Tiempo (5 kph)[s]':[T_P1_5s, T_P2_5s, T_P3_5s, T_P4_5s, T_P5_5s, T_P6_5s, T_P7_5s, T_P8_5s],
+    'Tiempo (15 kph)[s]':[T_P1_15s, T_P2_15s, T_P3_15s, T_P4_15s, T_P5_15s, T_P6_15s, T_P7_15s, T_P8_15s],
+    'Tiempo (25 kph)[s]':[T_P1_25s, T_P2_25s, T_P3_25s, T_P4_25s, T_P5_25s, T_P6_25s, T_P7_25s, T_P8_25s]
     })
 # ---------- Prints ----------
 
 def menu():
     print("Opciones \n 1. Tutorial \n 2. Valores de rastreo")
-    opcion = input("Opción de visualización")
+    opcion = input("Opción de visualización: ")
     if opcion == "1":
         print("\nSus coordenadas actuales son: " +str(lat), ", " +str(long) ,"\n")
         print("Para determinar la distancia, primero se debe hacer el cambio a radianes de las coordenadas.")
