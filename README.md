@@ -38,6 +38,7 @@ El valor del callsign de divide en 2 partes:
 ![Guia_page-0001](https://github.com/user-attachments/assets/7fcfcd7d-2415-406f-b992-9d0f5febb5b1)
 
  1- Con el sistema cargado en VSCode, se abre el archivo destinado para la configuración del transmisor.
+ 
  2- Configurar el dispositivo a gusto y conveniencia. En el ejemplo se muestran 3 distintos callsigns para el dispositivo.
  3- Configurar el dispositivo según la librería disponible. Para este dispositivo, la opción corresponde a "ttgo-t-beam-v1_2".
  4- Seleccionar la opción para compilación.
