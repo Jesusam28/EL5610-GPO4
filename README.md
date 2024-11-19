@@ -72,4 +72,4 @@ Latitud: 9.855053 y Longitud: -83.910603
 
 Con esto, se determina que, relativo a esta coordenada, el tiempo que le toma al sistema es:
 
-![image](https://github.com/user-attachments/assets/34db4c5e-8112-42ba-8a2d-2b16577bfc52)
+![image](https://github.com/user-attachments/assets/c2809c56-bf33-4011-9f2d-ae955b781562)
