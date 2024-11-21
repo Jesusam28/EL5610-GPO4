@@ -144,6 +144,45 @@ El diagrama de quinto nivel profundiza en los detalles técnicos del sistema, in
 
 ![image](https://github.com/user-attachments/assets/96350d63-de5e-4e74-bc3f-e5972855cade)
 
+## Diagrama de Flujo
+
+El diagrama de flujo detalla el funcionamiento lógico del sistema, cubriendo las principales etapas desde el encendido hasta la transmisión de datos. A continuación, se describen los pasos y decisiones clave:
+
+## Etapas del Diagrama
+
+### 1. **Encendido del Dispositivo**
+   - El sistema comienza su operación cuando se enciende el dispositivo.
+   - Este paso inicial asegura que todos los componentes estén listos para entrar en funcionamiento.
+
+### 2. **¿Dispositivo Correcto?**
+   - **Decisión clave:** Se verifica si el dispositivo es el correcto para operar.
+   - Si **no** es el dispositivo adecuado, el sistema detiene el proceso y emite una **notificación de error**.
+   - Si **sí** es el dispositivo correcto, el proceso avanza hacia el **procesamiento del firmware**.
+
+### 3. **Procesamiento del Firmware**
+   - En esta etapa, el firmware del sistema es procesado para garantizar que se cumplan las configuraciones y requisitos de funcionamiento.
+
+### 4. **¿Sistemas Correctos?**
+   - **Decisión clave:** Se validan los sistemas internos del dispositivo para asegurar que funcionan correctamente.
+   - Si los sistemas **no** son correctos, el proceso se redirige a la etapa de **notificación de error**.
+   - Si los sistemas **sí** son correctos, el flujo continúa hacia la integración de periféricos y sensores.
+
+### 5. **Integración de Sensores y Periféricos**
+   - En esta etapa, el dispositivo conecta e integra sensores y periféricos necesarios para su operación.
+
+### 6. **Receptor GPS**
+   - Una vez que los sensores y periféricos están integrados, el sistema utiliza el receptor GPS para recibir información de localización y datos asociados.
+
+### 7. **Transmisión de Datos**
+   - Finalmente, el sistema transmite la información procesada al dispositivo correspondiente para que sea utilizada según el caso de uso del proyecto.
+
+## Flujo de Errores
+- El sistema está diseñado para detectar errores en dos puntos principales:
+  1. Durante la validación del dispositivo.
+  2. Durante la verificación de los sistemas internos.
+- En ambos casos, si ocurre un error, se genera una **notificación** que interrumpe el flujo normal del proceso.
+
+![image](https://github.com/user-attachments/assets/cdf64d26-ec60-4b42-b66f-888b021056f3)
 
 
 ---
